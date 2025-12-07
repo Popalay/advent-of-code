@@ -1,3 +1,9 @@
+package `2024`
+
+import Point
+import get
+import println
+import readInput
 import java.util.LinkedList
 import java.util.Queue
 
@@ -6,8 +12,8 @@ fun main() {
 
     fun part2(input: List<String>): Int = calculateScore(input, allowDifferentPaths = true)
 
-    // Read the input from the `src/Day10.txt` file.
-    val input = readInput("Day10")
+    // Read the input from the `src/2024/Day10.txt` file.
+    val input = readInput("2024/Day10")
     part1(input).println()
     part2(input).println()
 }

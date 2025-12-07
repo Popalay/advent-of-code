@@ -1,3 +1,9 @@
+package `2024`
+
+import Point
+import println
+import readInput
+
 fun main() {
     fun part1(input: List<String>): Int {
         val map = input.map { it.toCharArray() }
@@ -15,8 +21,8 @@ fun main() {
             .size
     }
 
-    // Read the input from the `src/Day08.txt` file.
-    val input = readInput("Day08")
+    // Read the input from the `src/2024/Day08.txt` file.
+    val input = readInput("2024/Day08")
     part1(input).println()
     part2(input).println()
 }

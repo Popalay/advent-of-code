@@ -1,3 +1,8 @@
+package `2024`
+
+import println
+import readInput
+
 fun main() {
     fun part1(input: List<String>): Long {
         val memory = buildMemory(input.first())
@@ -13,8 +18,8 @@ fun main() {
         return fragmentedMemory.checkSum()
     }
 
-    // Read the input from the `src/Day09.txt` file.
-    val input = readInput("Day09")
+    // Read the input from the `src/2024/Day09.txt` file.
+    val input = readInput("2024/Day09")
     part1(input).println()
     part2(input).println()
 }

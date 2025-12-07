@@ -1,3 +1,8 @@
+package `2024`
+
+import println
+import readInput
+
 fun main() {
     fun part1(input: List<String>): Int {
         val (rulesInput, updatesInput) = input.filter(String::isNotBlank).partition { '|' in it }
@@ -30,8 +35,8 @@ fun main() {
         return result
     }
 
-    // Read the input from the `src/Day05.txt` file.
-    val input = readInput("Day05")
+    // Read the input from the `src/2024/Day05.txt` file.
+    val input = readInput("2024/Day05")
     part1(input).println()
     part2(input).println()
 }

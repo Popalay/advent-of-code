@@ -1,3 +1,8 @@
+package `2024`
+
+import println
+import readInput
+
 fun main() {
     fun part1(input: List<String>): Int {
         val chars = input.map(String::toList)
@@ -108,8 +113,8 @@ fun main() {
     }
 
 
-    // Read the input from the `src/Day04.txt` file.
-    val input = readInput("Day04")
+    // Read the input from the `src/2024/Day04.txt` file.
+    val input = readInput("2024/Day04")
     part1(input).println()
     part2(input).println()
 }

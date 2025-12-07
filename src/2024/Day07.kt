@@ -1,3 +1,7 @@
+package `2024`
+
+import println
+import readInput
 import kotlin.math.pow
 
 fun main() {
@@ -5,8 +9,8 @@ fun main() {
 
     fun part2(input: List<String>): Long = input.solveWith(setOf("*", "+", "||"))
 
-    // Read the input from the `src/Day07.txt` file.
-    val input = readInput("Day07")
+    // Read the input from the `src/2024/Day07.txt` file.
+    val input = readInput("2024/Day07")
     part1(input).println()
     part2(input).println()
 }

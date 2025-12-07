@@ -1,3 +1,8 @@
+package `2024`
+
+import println
+import readInput
+
 fun main() {
     // Predict the path of the guard.
     // How many distinct positions will the guard visit before leaving the mapped area?
@@ -26,8 +31,8 @@ fun main() {
             }
     }
 
-    // Read the input from the `src/Day06.txt` file.
-    val input = readInput("Day06")
+    // Read the input from the `src/2024/Day06.txt` file.
+    val input = readInput("2024/Day06")
     part1(input).println()
     part2(input).println()
 }

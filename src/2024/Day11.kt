@@ -1,3 +1,8 @@
+package `2024`
+
+import digitCount
+import println
+import readInput
 import kotlin.math.pow
 
 fun main() {
@@ -13,8 +18,8 @@ fun main() {
         return processStones(stones, 75)
     }
 
-    // Read the input from the `src/Day11.txt` file.
-    val input = readInput("Day11")
+    // Read the input from the `src/2024/Day11.txt` file.
+    val input = readInput("2024/Day11")
     part1(input).println()
     part2(input).println()
 }
