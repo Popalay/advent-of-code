@@ -9,6 +9,8 @@ import kotlin.math.log10
  */
 fun readInput(name: String) = Path("src/$name.txt").readText().trim().lines()
 
+fun readInputRaw(name: String) = Path("src/$name.txt").readText().trim()
+
 /**
  * Converts string to md5 hash.
  */
