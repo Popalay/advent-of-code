@@ -24,6 +24,12 @@ fun String.md5() =
  */
 fun Any?.println() = println(this)
 
+fun List<List<Any>>.printGrid() {
+    this.forEach { row ->
+        println(row.joinToString(""))
+    }
+}
+
 data class Point(
     val x: Int,
     val y: Int,
@@ -42,6 +48,6 @@ enum class Direction(
     RIGHT(Point(1, 0)),
 }
 
-operator fun List<List<Int>>.get(point: Point): Int? = this.getOrNull(point.y)?.getOrNull(point.x)
+operator fun <T> List<List<T>>.get(point: Point): T? = this.getOrNull(point.y)?.getOrNull(point.x)
 
 fun digitCount(num: Long): Int = if (num == 0L) 1 else log10(num.toDouble()).toInt() + 1
